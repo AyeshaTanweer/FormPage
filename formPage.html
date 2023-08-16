@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #compsci {
+            accent-color: green;
+        }
+        #civil {
+            accent-color: green;
+        }
+        #it {
+            accent-color: green;
+        }
+        #ec {
+            accent-color: green;
+        }
+        label {
+            color: sienna;
+            font-size: large;
+            font-size: 24px;
+        }
+
+        input {
+           height: 24px;
+        }
+        
+        p {
+            color: sienna;
+            font-size: large;
+            font-size: 24px;
+        }
+        .alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+
+.alert.success {
+    background-color: #04AA6D;
+    font-size: x-large;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 10%;
+  height: 16%;
+  text-decoration: none;
+  font-size: large;
+
+  cursor: pointer;
+}
+    </style>
+    <h1 style="color: green; text-align: center;">Form Page</h1>
+    <body>
+        <form action="/formSubmit.html" method="get" id="submitform">
+            <label for="fname">Name : </label>
+            <input type="text" id="firstname" name="fname" size="16" required /> <br> <br>
+
+            <label for="email">Email Id : </label>
+            <input type="email" id="email" name="email" size="30"> <br> <br> 
+
+            <label for="fname">Roll No : </label>
+            <input type="text" id="rollnumber" name="rollno" size="16" required />
+
+            <p> Please Select Your Branch : </p>
+
+            <input type="radio" id="compsci" name="fav_subject" value="Computer Science">
+            <label for="compsci" style="color: #04AA6D;">Computer Science</label>
+            <input type="radio" id="civil" name="fav_subject" value="CIVIL">
+            <label for="civil" style="color: #04AA6D;">CIVIL</label>
+            <input type="radio" id="it" name="fav_subject" value="Information Technology">
+            <label for="it" style="color: #04AA6D;"> Information Technology </label>
+            <input type="radio" id="ec" name="fav_subject" value="Electronics">
+            <label for="ec" style="color: #04AA6D;"> Electronics </label>
+
+            <p> Your Interest In : </p>
+
+            <input type="checkbox" id="python" name="python" value="Python" style="accent-color: green;">
+            <label for="python"> Python </label><br>
+            <input type="checkbox" id="webdev" name="webdev" value="Web Development" style="accent-color: green;">
+            <label for="webdev"> Web Development </label><br>
+            <input type="checkbox" id="java" name="java" value="Java" style="accent-color: green;">
+            <label for="java"> Java </label><br>
+            <input type="checkbox" id="ai" name="ai" value="AI" style="accent-color: green;">
+            <label for="ai"> Artificial Intelligence (AI) </label><br>
+            <input type="checkbox" id="blockchain" name="blockchain" value="BlockChain" style="accent-color: green;">
+            <label for="blockchain"> BlockChain </label><br>
+            <input type="checkbox" id="ml" name="ml" value="Machine Learning" style="accent-color: green;">
+            <label for="ml"> Machine Learning (ML) </label><br> <br>
+
+
+
+            
+            <input type="submit" value="Submit"> <br><br>
+
+                <!-- <div class="alert success">
+                    <center>Your form submitted <strong>Successfully!</strong> </center>
+                </div> -->
+        </form>
+    </body>
+</html>
