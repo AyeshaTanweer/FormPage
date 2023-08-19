@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <head><title>Form Page</title></head>
     <style>
         #compsci {
             accent-color: green;
@@ -18,17 +19,14 @@
             font-size: large;
             font-size: 24px;
         }
-
         input {
            height: 24px;
         }
-        
         p {
             color: sienna;
             font-size: large;
             font-size: 24px;
         }
-
         input[type=submit] {
             background-color: #04AA6D;
             border: none;
@@ -51,10 +49,9 @@
             font-size: 16px;
             resize: none;
         }
-
     </style>
-    <h1 style="color: green; text-align: center;">Form Page</h1>
     <body>
+        <h1 style="color: green; text-align: center;">Form Page</h1>
         <form action="/formSubmit.html" method="get" id="submitform">
             <label for="fname">Name : </label>
             <input type="text" id="firstname" name="fname" size="16" required /> <br> <br>
